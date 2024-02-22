@@ -1,50 +1,68 @@
-# Frappe Framework Intellisense
+<div align="center">
+  <img src="https://grow.empress.eco/uploads/default/original/2X/1/1f1e1044d3864269d2a613577edb9763890422ab.png" alt="Intellisense Logo" />
+  <h1 align="center">Intellisense: Enhancing Your Development Experience</h1>
+  <p align="center">
+    A feature-rich extension that improves productivity and code quality in your Empress projects.
+    <br />
+    <a href="https://grow.empress.eco/">Explore the Docs</a>
+    ·
+    <a href="https://github.com/empress-eco/intellisense/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/empress-eco/intellisense/issues">Request Feature</a>
+  </p>
+</div>
 
-This project contains a Language Server and a VSCode Client to enable
-intellisense in Frappe projects.
+## About The Project
 
-## Installation
+Intellisense is a robust extension for Visual Studio Code (VSCode) that supercharges your Empress development projects with intelligent programming assistance. Designed with developers in mind, Intellisense offers features like autocompletion, translation string diagnostics, and method source navigation. These features aim to streamline your development workflow, boosting productivity and enhancing code quality.
 
-1. Make sure your `frappe-bench` directory is on Python 3.
+### Key Features
 
-   ```sh
-   cd frappe-bench
-   ./env/bin/python --version
-   Python 3.7.7
-   ```
+- **Document Autocompletion**: Intuitively autocompletes fieldnames after typing 'self.' in DocType classes and for document objects created by 'get_doc'.
+- **Translation String Diagnostics**: Highlights and reports incorrect usage of translation strings as an error.
+- **Method Source Navigation**: Navigate directly to the patch source file by command clicking any patch method in 'patches.txt'.
 
-2. Install this extension from
-   [Marketplace](https://marketplace.visualstudio.com/items?itemName=netchampfaris.frappe-intellisense).
-   The extension will download the required dependencies automatically.
+### Built With
 
+- [VSCode](https://code.visualstudio.com/)
+- [Python](https://www.python.org/)
 
-## Features
+## Getting Started
 
-Right now, we have only a few features but this is the starting point of many
-more features to come.
+### Prerequisites
 
-### Document autocompletion
+Please ensure your `Empress-bench` directory is running on Python 3. To check this, navigate to the directory and run the following command `./env/bin/python --version`.
 
-In DocType classes, fieldnames will be autocompleted after you type `self.`. For
-document objects created by `get_doc` will have fieldnames and method
-autocompletions.
+### Installation
 
-![Document Intellisense](https://user-images.githubusercontent.com/9355208/97115700-155ff500-171e-11eb-85f9-6887e4b921fd.gif)
+To get started with Intellisense, follow these simple steps:
 
-### Translation string diagnostics
+1. Clone the repo:
 
-Incorrect usage of translation strings will be highlighted in red and reported
-as error.
+```sh
+git clone https://github.com/empress-eco/intellisense.git
+```
 
-![Translation Diagnostics](https://user-images.githubusercontent.com/9355208/97115697-142ec800-171e-11eb-8e6b-e6fb6f535b97.gif)
+2. Install this extension from the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=netchampfaris.Empress-intellisense). The extension will automatically download the required dependencies.
 
-### Jump to method source in `patches.txt`
+## Usage
 
-If you command click any patch method in `patches.txt` you will be navigated to
-the patch source file.
+Once installed, Intellisense will automatically start providing autocompletions, diagnostics, and navigation in your Empress projects. No additional setup is required.
 
-![Patches Jump to Definition](https://user-images.githubusercontent.com/9355208/97115692-0e38e700-171e-11eb-9f7f-3f783a6883b7.gif)
+## Contributing
 
----
+We value and appreciate community contributions! Here's how you can contribute:
 
-License MIT
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License. Your contributions will also be licensed under the MIT License.
+
+## Acknowledgements
+
+We extend our heartfelt gratitude to all our contributors who help improve the project. Special thanks to the Empress Community for their support, inspiration, and valuable contributions. Their innovation and dedication have laid the foundation for this project's success.
